@@ -1,0 +1,83 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1671284008423,3801,https://nfmdev.omegacube.com/,200,OK,Thread Group 1-2,text,true,,54008,4153,2,2,https://nfmdev.omegacube.com/,2186,0,1864
+1671284008423,2186,https://nfmdev.omegacube.com/-0,200,OK,Thread Group 1-2,text,true,,8266,500,2,2,https://nfmdev.omegacube.com/,2186,0,1864
+1671284010733,1482,https://nfmdev.omegacube.com/-1,200,OK,Thread Group 1-2,text,true,,3045,580,2,2,https://nfmdev.omegacube.com/App_Themes/default/login.css,1482,0,1172
+1671284010720,388,https://nfmdev.omegacube.com/-2,200,OK,Thread Group 1-2,text,true,,23371,678,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNod0hskKCfJ01b_etMGi367rvJRBfVJcd8FmiohAmoV2PYfmTZFgS6ugjTP9kjOZw2&t=637814437746327080,378,0,0
+1671284010739,1485,https://nfmdev.omegacube.com/-3,200,OK,Thread Group 1-2,text,true,,3312,678,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYsCsmB7zTbC7c9YKioR0KIMR36cH4Mw9I1DFCGEEKVMG-1MsAGDB7c5j3VnhP0pSaA2&t=637814437746327080,1485,0,1177
+1671284010735,1485,https://nfmdev.omegacube.com/-4,200,OK,Thread Group 1-2,bin,true,,6218,579,2,2,https://nfmdev.omegacube.com/images/client_logo_main.gif,1485,0,1179
+1671284010735,1482,https://nfmdev.omegacube.com/-5,200,OK,Thread Group 1-2,bin,true,,3453,568,2,2,https://nfmdev.omegacube.com/images/logo4.gif,1482,0,1180
+1671284010730,1488,https://nfmdev.omegacube.com/-6,200,OK,Thread Group 1-2,bin,true,,6343,570,2,2,https://nfmdev.omegacube.com/images/oc_logo.gif,1488,0,1181
+1671284008042,4580,https://nfmdev.omegacube.com/,200,OK,Thread Group 1-1,text,true,,54073,4153,2,2,https://nfmdev.omegacube.com/,2544,0,2217
+1671284008042,2550,https://nfmdev.omegacube.com/-0,200,OK,Thread Group 1-1,text,true,,8331,500,2,2,https://nfmdev.omegacube.com/,2544,0,2217
+1671284010729,359,https://nfmdev.omegacube.com/-1,200,OK,Thread Group 1-1,text,true,,3045,580,2,2,https://nfmdev.omegacube.com/App_Themes/default/login.css,359,0,0
+1671284010720,1902,https://nfmdev.omegacube.com/-2,200,OK,Thread Group 1-1,text,true,,23371,678,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNod0hskKCfJ01b_etMGi367rvJRBfVJcd8FmiohAmoV2PYfmTZFgS6ugjTP9kjOZw2&t=637814437746327080,1506,0,1194
+1671284010736,1482,https://nfmdev.omegacube.com/-3,200,OK,Thread Group 1-1,text,true,,3312,678,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYsCsmB7zTbC7c9YKioR0KIMR36cH4Mw9I1DFCGEEKVMG-1MsAGDB7c5j3VnhP0pSaA2&t=637814437746327080,1481,0,1181
+1671284010735,1490,https://nfmdev.omegacube.com/-4,200,OK,Thread Group 1-1,bin,true,,6218,579,2,2,https://nfmdev.omegacube.com/images/client_logo_main.gif,1489,0,1181
+1671284010739,1479,https://nfmdev.omegacube.com/-5,200,OK,Thread Group 1-1,bin,true,,3453,568,2,2,https://nfmdev.omegacube.com/images/logo4.gif,1479,0,1173
+1671284010720,1499,https://nfmdev.omegacube.com/-6,200,OK,Thread Group 1-1,bin,true,,6343,570,2,2,https://nfmdev.omegacube.com/images/oc_logo.gif,1498,0,1193
+1671284026734,1057,https://nfmdev.omegacube.com/,200,OK,Thread Group 1-1,text,true,,8688,5100,2,2,https://nfmdev.omegacube.com/,743,0,0
+1671284026734,743,https://nfmdev.omegacube.com/-0,200,OK,Thread Group 1-1,text,true,,8091,1487,2,2,https://nfmdev.omegacube.com/,743,0,0
+1671284027482,309,https://nfmdev.omegacube.com/-1,304,Not Modified,Thread Group 1-1,,true,,93,715,2,2,https://nfmdev.omegacube.com/App_Themes/default/login.css,0,0,0
+1671284027482,295,https://nfmdev.omegacube.com/-2,304,Not Modified,Thread Group 1-1,,true,,226,777,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNod0hskKCfJ01b_etMGi367rvJRBfVJcd8FmiohAmoV2PYfmTZFgS6ugjTP9kjOZw2&t=637814437746327080,0,0,0
+1671284027484,293,https://nfmdev.omegacube.com/-3,304,Not Modified,Thread Group 1-1,,true,,92,713,2,2,https://nfmdev.omegacube.com/images/client_logo_main.gif,0,0,0
+1671284027482,309,https://nfmdev.omegacube.com/-4,304,Not Modified,Thread Group 1-1,,true,,93,703,2,2,https://nfmdev.omegacube.com/images/logo4.gif,0,0,0
+1671284027482,303,https://nfmdev.omegacube.com/-5,304,Not Modified,Thread Group 1-1,,true,,93,705,2,2,https://nfmdev.omegacube.com/images/oc_logo.gif,0,0,0
+1671284031566,631,https://nfmdev.omegacube.com/,200,OK,Thread Group 1-2,text,true,,8688,5100,2,2,https://nfmdev.omegacube.com/,318,0,0
+1671284031566,318,https://nfmdev.omegacube.com/-0,200,OK,Thread Group 1-2,text,true,,8091,1487,2,2,https://nfmdev.omegacube.com/,318,0,0
+1671284031887,307,https://nfmdev.omegacube.com/-1,304,Not Modified,Thread Group 1-2,,true,,93,715,2,2,https://nfmdev.omegacube.com/App_Themes/default/login.css,0,0,0
+1671284031888,294,https://nfmdev.omegacube.com/-2,304,Not Modified,Thread Group 1-2,,true,,226,777,2,2,https://nfmdev.omegacube.com/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNod0hskKCfJ01b_etMGi367rvJRBfVJcd8FmiohAmoV2PYfmTZFgS6ugjTP9kjOZw2&t=637814437746327080,0,0,0
+1671284031888,292,https://nfmdev.omegacube.com/-3,304,Not Modified,Thread Group 1-2,,true,,92,713,2,2,https://nfmdev.omegacube.com/images/client_logo_main.gif,0,0,0
+1671284031888,309,https://nfmdev.omegacube.com/-4,304,Not Modified,Thread Group 1-2,,true,,93,703,2,2,https://nfmdev.omegacube.com/images/logo4.gif,0,0,0
+1671284031888,292,https://nfmdev.omegacube.com/-5,304,Not Modified,Thread Group 1-2,,true,,93,705,2,2,https://nfmdev.omegacube.com/images/oc_logo.gif,0,0,0
+1671284049400,57637,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL,200,OK,Thread Group 1-1,text,true,,15112184,4252,2,2,http://om.irislogic.com/#/auth//NFM/ADD_ORDER_MASTER_DETAIL/add-order,403,0,0
+1671284049400,403,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-0,302,Found,Thread Group 1-1,text,true,,491,609,2,2,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL,403,0,0
+1671284049804,2040,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-1,200,OK,Thread Group 1-1,text,true,,909,496,2,2,http://om.irislogic.com/#/auth//NFM/ADD_ORDER_MASTER_DETAIL/add-order,2040,0,1319
+1671284051850,628,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-2,200,OK,Thread Group 1-1,bin,true,,1189,507,2,2,http://om.irislogic.com/favicon.ico,627,0,309
+1671284051850,55187,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-3,200,OK,Thread Group 1-1,text,true,,1536054,527,2,2,http://om.irislogic.com/styles.fa195d6a9e66a3eb6196.css,921,0,0
+1671284051851,607,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-4,200,OK,Thread Group 1-1,text,true,,1811,527,2,2,http://om.irislogic.com/runtime.221e7c66dcc8cc6f8533.js,606,0,299
+1671284051851,1551,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-5,200,OK,Thread Group 1-1,text,true,,140964,533,2,2,http://om.irislogic.com/polyfills-es5.2a29241d603415a11695.js,627,0,308
+1671284051852,919,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-6,200,OK,Thread Group 1-1,text,true,,38433,529,2,2,http://om.irislogic.com/polyfills.cb268940e57ecb618f72.js,605,0,298
+1671284051852,53966,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-7,200,OK,Thread Group 1-1,text,true,,13392333,524,2,2,http://om.irislogic.com/main.944a32b136eb7ad8547a.js,605,0,298
+1671284107050,582,http://om.irislogic.com/assets/app-config.json,200,OK,Thread Group 1-1,text,true,,412,322,2,2,http://om.irislogic.com/assets/app-config.json,582,0,293
+1671284107634,836,http://34.202.2.77:3990/user/login/PRANSHU,200,OK,Thread Group 1-1,text,true,,368,271,2,2,http://34.202.2.77:3990/user/login/PRANSHU,836,0,324
+1671284108471,336,http://34.202.2.77:3990/user/userType/PRANSHU,200,OK,Thread Group 1-1,text,true,,304,379,2,2,http://34.202.2.77:3990/user/userType/PRANSHU,336,0,0
+1671284108808,335,http://34.202.2.77:3990/user/userType/PRANSHU,304,Not Modified,Thread Group 1-1,,true,,210,430,2,2,http://34.202.2.77:3990/user/userType/PRANSHU,0,0,0
+1671284109145,451,http://34.202.2.77:3990/user/userType/PRANSHU,304,Not Modified,Thread Group 1-1,,true,,210,430,2,2,http://34.202.2.77:3990/user/userType/PRANSHU,0,0,0
+1671284109597,356,http://34.202.2.77:3990/menu/getMenu/PRANSHU,200,OK,Thread Group 1-1,text,true,,2250,378,2,2,http://34.202.2.77:3990/menu/getMenu/PRANSHU,356,0,0
+1671284109954,29272,http://34.202.2.77:3990/items,200,OK,Thread Group 1-1,text,true,,7642056,363,2,2,http://34.202.2.77:3990/items,1485,0,0
+1671284139226,444,http://34.202.2.77:3990/order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0,403,Forbidden,Thread Group 1-1,text,false,,331,414,2,2,http://34.202.2.77:3990/order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0,444,0,0
+1671284139672,298,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-1,text,false,,331,418,2,2,http://34.202.2.77:3990/items,298,0,0
+1671284139971,299,http://34.202.2.77:3990/customer,403,Forbidden,Thread Group 1-1,text,false,,331,366,2,2,http://34.202.2.77:3990/customer,299,0,0
+1671284140271,301,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-1,text,false,,331,430,2,2,http://34.202.2.77:3990/user/userType/PRANSHU,301,0,0
+1671284140573,318,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-1,text,false,,331,430,2,2,http://34.202.2.77:3990/user/userType/PRANSHU,318,0,0
+1671284140892,318,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-1,text,false,,331,418,2,2,http://34.202.2.77:3990/items,318,0,0
+1671284141211,300,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-1,text,false,,331,418,2,2,http://34.202.2.77:3990/items,300,0,0
+1671284141512,299,http://34.202.2.77:3990/customer/shipToAddress/null,403,Forbidden,Thread Group 1-1,text,false,,331,385,2,2,http://34.202.2.77:3990/customer/shipToAddress/null,299,0,0
+1671284141812,299,http://34.202.2.77:3990/customer/shipToAddress/null,403,Forbidden,Thread Group 1-1,text,false,,331,385,2,2,http://34.202.2.77:3990/customer/shipToAddress/null,299,0,0
+1671284007930,98318,NavigateToOrderManagementPage,,"Number of samples in transaction : 19, number of failing samples : 9",Thread Group 1-1,,false,,22823734,19742,2,2,null,10161,35864,2834
+1671284043371,102847,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL,200,OK,Thread Group 1-2,text,true,,15112184,4252,1,1,http://om.irislogic.com/#/auth//NFM/ADD_ORDER_MASTER_DETAIL/add-order,382,0,0
+1671284043371,382,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-0,302,Found,Thread Group 1-2,text,true,,491,609,1,1,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL,382,0,0
+1671284043754,613,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-1,200,OK,Thread Group 1-2,text,true,,909,496,1,1,http://om.irislogic.com/#/auth//NFM/ADD_ORDER_MASTER_DETAIL/add-order,612,0,305
+1671284044372,616,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-2,200,OK,Thread Group 1-2,bin,true,,1189,507,1,1,http://om.irislogic.com/favicon.ico,616,0,302
+1671284044372,6592,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-3,200,OK,Thread Group 1-2,text,true,,1536054,527,1,1,http://om.irislogic.com/styles.fa195d6a9e66a3eb6196.css,616,0,302
+1671284044374,614,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-4,200,OK,Thread Group 1-2,text,true,,1811,527,1,1,http://om.irislogic.com/runtime.221e7c66dcc8cc6f8533.js,614,0,300
+1671284044371,1228,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-5,200,OK,Thread Group 1-2,text,true,,140964,533,1,1,http://om.irislogic.com/polyfills-es5.2a29241d603415a11695.js,303,0,0
+1671284044371,913,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-6,200,OK,Thread Group 1-2,text,true,,38433,529,1,1,http://om.irislogic.com/polyfills.cb268940e57ecb618f72.js,618,0,303
+1671284044371,101847,https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL-7,200,OK,Thread Group 1-2,text,true,,13392333,524,1,1,http://om.irislogic.com/main.944a32b136eb7ad8547a.js,620,0,303
+1671284146222,647,http://om.irislogic.com/assets/app-config.json,200,OK,Thread Group 1-2,text,true,,412,322,1,1,http://om.irislogic.com/assets/app-config.json,647,0,339
+1671284146871,613,http://34.202.2.77:3990/user/login/PRANSHU,200,OK,Thread Group 1-2,,true,,177,271,1,1,http://34.202.2.77:3990/user/login/PRANSHU,613,0,304
+1671284147484,300,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,379,1,1,http://34.202.2.77:3990/user/userType/PRANSHU,300,0,0
+1671284147785,312,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,379,1,1,http://34.202.2.77:3990/user/userType/PRANSHU,312,0,0
+1671284148098,409,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,379,1,1,http://34.202.2.77:3990/user/userType/PRANSHU,408,0,0
+1671284148507,307,http://34.202.2.77:3990/menu/getMenu/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,378,1,1,http://34.202.2.77:3990/menu/getMenu/PRANSHU,307,0,0
+1671284148815,410,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-2,text,false,,331,363,1,1,http://34.202.2.77:3990/items,410,0,0
+1671284149226,408,http://34.202.2.77:3990/order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0,403,Forbidden,Thread Group 1-2,text,false,,331,414,1,1,http://34.202.2.77:3990/order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0,407,0,0
+1671284149634,308,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-2,text,false,,331,363,1,1,http://34.202.2.77:3990/items,308,0,0
+1671284149943,300,http://34.202.2.77:3990/customer,403,Forbidden,Thread Group 1-2,text,false,,331,366,1,1,http://34.202.2.77:3990/customer,300,0,0
+1671284150243,312,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,379,1,1,http://34.202.2.77:3990/user/userType/PRANSHU,312,0,0
+1671284150556,409,http://34.202.2.77:3990/user/userType/PRANSHU,403,Forbidden,Thread Group 1-2,text,false,,331,379,1,1,http://34.202.2.77:3990/user/userType/PRANSHU,409,0,0
+1671284150965,410,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-2,text,false,,331,363,1,1,http://34.202.2.77:3990/items,410,0,0
+1671284151375,309,http://34.202.2.77:3990/items,403,Forbidden,Thread Group 1-2,text,false,,331,363,1,1,http://34.202.2.77:3990/items,309,0,0
+1671284151685,408,http://34.202.2.77:3990/customer/shipToAddress/null,403,Forbidden,Thread Group 1-2,text,false,,331,385,1,1,http://34.202.2.77:3990/customer/shipToAddress/null,408,0,0
+1671284152093,408,http://34.202.2.77:3990/customer/shipToAddress/null,403,Forbidden,Thread Group 1-2,text,false,,331,385,1,1,http://34.202.2.77:3990/customer/shipToAddress/null,408,0,0
+1671284008419,113549,NavigateToOrderManagementPage,,"Number of samples in transaction : 19, number of failing samples : 14",Thread Group 1-2,,false,,15180103,19373,1,1,null,9154,30533,2507
