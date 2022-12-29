@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Ordermanagement" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="OrderManagement" enabled="true">
       <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
-      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -85,7 +85,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
@@ -93,12 +93,12 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="NavigateToOrderManagementPage" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://nfmdev.omegacube.com/" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Launch Login URL" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -149,7 +149,7 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://nfmdev.omegacube.com/" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Click On Login" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="__VIEWSTATEGENERATOR" elementType="HTTPArgument">
@@ -159,10 +159,10 @@
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
-                <elementProp name="pwd" elementType="HTTPArgument">
+                <elementProp name="pwdBxCls" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                  <stringProp name="Argument.name">pwd</stringProp>
-                  <stringProp name="Argument.value">${pwdBxCls}</stringProp>
+                  <stringProp name="Argument.name">pwdBxCls</stringProp>
+                  <stringProp name="Argument.value">Pranshu123</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -176,14 +176,14 @@
                 <elementProp name="__VIEWSTATE" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">__VIEWSTATE</stringProp>
-                  <stringProp name="Argument.value">/10ceEXPCw4HyfqB1vGakrja59aDkaMOE0qQkMnGaJh8rue65aKA+CYPXT8ayQuVNFYnYRYX4rrbarn73ETRorAfVfUiFGHJVoOjlRWR1Z2SXBSDMHi4SNFoG43yaOiqxwsW8rMofuKTdSTucb3D5g5E0/GqszqzVMiW+zxCRi5hDkTft2YwanIZsG4tZFxyz20RFfNNiKPHRNEBf8sNrBEZOGItUI3wR+z8WZcIh6wafsAYc9OnrLE/LXrPswLNkSmL3b9F+DIYbEdFOBpngFU7NeW6/ie5b/+TNDGtSWpShk7zZKT7Fyg0t+HNpVZS71Jf9hf0lKMHEkEES6+U+fqL8Qh65N2kZu68jc8jGJdNYW3r7iJ0XAZ1q1xRie9cn548SF8OtQzCQemwjrZyCgimOuHPVmE9lu81jTlQNaQ8Nr3mb92ZhOgKKOWSVc0s1VFNgF4M0Eol/ti3mcH384bG7PDoZ9c05n9oISmUE/dByvJAN2GPUP2JZ38gPxJIFQaiGJoGdFLnY/xacyJKtZH4QFGjbS3LGeS3qmfpe/CnBAUxuaVcfJbNjAfmeYNApEE7aFiZ4H/DrAq4ufIypFo+NL3+mEcIRsJWvfFtywRWrdU7J60wSj6I/w2OYfBd</stringProp>
+                  <stringProp name="Argument.value">PClDZTOGylhnOAprnR4dt1XCR60wTfPZf9Wz4+XrRPwKHJPJIAZ8yloAkd+/eFp7fU29yyJi3f+g/MVt2ZGEYrLh2VrflpFpCaHHoJ2g33pueHuTb+X1YUeRs+lPD7D47V0M2m9Y6uCFr34oQlfHscQW325a2zFJZFw3YYHR7oMLCEGSeciPfzfpMZZ/svsVG7KKsfzC11yKj74JmY3tLBcLGKKQji7wwMsuYqTXQLRpwACotCqRlp3u2nwY9+Je3d98zgcpZ4yvPiXPQz0/HF11Lq52Bi+WqqJXsmWrnIeOE+HSLWtDM3vgRvIqjpBUaFJG9Z1c9o+3SYT2QE0Uw2ey0YwAkY9JQjr8BkxTM5QXIpG36vATa/p2SaPAYVX8N6hpD0YictBvKmbjAHT5VA0cymPO0sjmuGbtvPe9ukQoxd12QFE74CpIvCOOZ0GIJkZGcxXKvtTyy1GWU3IH3F0ecj2L0nqljC7Eckn7t0qjzOqufkyYKpUXgt+qaUpigaoOFgAKDU9Gp7ekuVoqAjlfvv02xC4J7bsIt20LpVQwH1EvmeuoU6yhkTQz0P6ZysLTbZGgMk+QFAxy0cj2twKMl2fb8SBheHglohtVP0mXTGaO25Kmr1ym3jfBHopD</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="uName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">uName</stringProp>
-                  <stringProp name="Argument.value">${uName}</stringProp>
+                  <stringProp name="Argument.value">pranshu</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -269,13 +269,13 @@
             </HeaderManager>
             <hashTree/>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">13324.0</stringProp>
-              <stringProp name="ConstantTimer.delay">6662</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 13324 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">19184.0</stringProp>
+              <stringProp name="ConstantTimer.delay">9592</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 19184 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://nfmdev.omegacube.com/ZOCT_OUTSIDE_INTEGRATION.aspx?mid=ADD_ORDER_MASTER_DETAIL" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Navigate to Order Management" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="mid" elementType="HTTPArgument">
@@ -328,54 +328,13 @@
             </HeaderManager>
             <hashTree/>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
-              <stringProp name="RandomTimer.range">14412.0</stringProp>
-              <stringProp name="ConstantTimer.delay">7206</stringProp>
-              <stringProp name="TestPlan.comments">Recorded time was 14412 milliseconds</stringProp>
+              <stringProp name="RandomTimer.range">53881.0</stringProp>
+              <stringProp name="ConstantTimer.delay">26940.5</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 53881 milliseconds</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://om.irislogic.com/assets/app-config.json" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_2}</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">assets/app-config.json</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">LoggingIn</stringProp>
-                </elementProp>
-                <elementProp name="No-Auth" elementType="Header">
-                  <stringProp name="Header.name">No-Auth</stringProp>
-                  <stringProp name="Header.value">True</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/login/PRANSHU" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Select an order" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -383,40 +342,7 @@
             <stringProp name="HTTPSampler.port">3990</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/login/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">LoggingIn</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/userType/PRANSHU" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/userType/PRANSHU</stringProp>
+            <stringProp name="HTTPSampler.path">order-header/orderNo/103210</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -461,7 +387,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/userType/PRANSHU" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Wait for Order to load" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
@@ -469,643 +395,7 @@
             <stringProp name="HTTPSampler.port">3990</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/userType/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/userType/PRANSHU" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/userType/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/menu/getMenu/PRANSHU" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">menu/getMenu/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/items" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">items</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">order-header/userId/PRANSHU/userType/INTERNAL/linkedId/0</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/items" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">items</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/customer" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">customer</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/userType/PRANSHU" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/userType/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/user/userType/PRANSHU" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">user/userType/PRANSHU</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/items" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">items</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/items" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">items</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/customer/shipToAddress/null" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">customer/shipToAddress/null</stringProp>
-            <stringProp name="HTTPSampler.method">GET</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="primarykey1value" elementType="Header">
-                  <stringProp name="Header.name">primarykey1value</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-                <elementProp name="pagename" elementType="Header">
-                  <stringProp name="Header.name">pagename</stringProp>
-                  <stringProp name="Header.value">Add Order</stringProp>
-                </elementProp>
-                <elementProp name="primarykey1" elementType="Header">
-                  <stringProp name="Header.name">primarykey1</stringProp>
-                  <stringProp name="Header.value">orderNo</stringProp>
-                </elementProp>
-                <elementProp name="Accept" elementType="Header">
-                  <stringProp name="Header.name">Accept</stringProp>
-                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
-                </elementProp>
-                <elementProp name="userId" elementType="Header">
-                  <stringProp name="Header.name">userId</stringProp>
-                  <stringProp name="Header.value">PRANSHU</stringProp>
-                </elementProp>
-                <elementProp name="pageid" elementType="Header">
-                  <stringProp name="Header.name">pageid</stringProp>
-                  <stringProp name="Header.value">ZOCT_OUTSIDE_INTEGRATION</stringProp>
-                </elementProp>
-                <elementProp name="menuid" elementType="Header">
-                  <stringProp name="Header.name">menuid</stringProp>
-                  <stringProp name="Header.value"></stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://34.202.2.77:3990/customer/shipToAddress/null" enabled="true">
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-              <collectionProp name="Arguments.arguments"/>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">${BASE_URL_3}</stringProp>
-            <stringProp name="HTTPSampler.port">3990</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">customer/shipToAddress/null</stringProp>
+            <stringProp name="HTTPSampler.path">customer/shipToAddress/901127</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1151,7 +441,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -1185,118 +475,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\bhavs\OneDrive\Documents\jmeter files\TabularViewResult</stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\bhavs\OneDrive\Documents\jmeter files\TreeViewResult</stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\bhavs\OneDrive\Documents\jmeter files\ResponseResult</stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\bhavs\OneDrive\Documents\jmeter files\AggregrateResult</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
